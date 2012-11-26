@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  first_name: MyString
+  last_name: MyString
+  spiritual_name: MyString
+  age: 1
+  date_of_birth: 2012-11-18
+  sex: MyString
+  marital_status: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  zipcode: MyString
+  email: MyString
+  dayphone: MyString
+  nightphone: MyString
+  language: MyString
+  illness: MyString
+  prescribed_medications: MyString
+  emergency_contact: MyString
+  emergency_relationship: MyString
+  emergency_email: MyString
+  emergency_phone: MyString
+  emergency_address: MyString
+  how_long_practice: MyString
+  how_know: MyString
+  ever_been: false
+  experience: MyText
+
+two:
+  user_id: 1
+  first_name: MyString
+  last_name: MyString
+  spiritual_name: MyString
+  age: 1
+  date_of_birth: 2012-11-18
+  sex: MyString
+  marital_status: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  zipcode: MyString
+  email: MyString
+  dayphone: MyString
+  nightphone: MyString
+  language: MyString
+  illness: MyString
+  prescribed_medications: MyString
+  emergency_contact: MyString
+  emergency_relationship: MyString
+  emergency_email: MyString
+  emergency_phone: MyString
+  emergency_address: MyString
+  how_long_practice: MyString
+  how_know: MyString
+  ever_been: false
+  experience: MyText

@@ -1,0 +1,37 @@
+<div class="row">
+	<div class="span8 offset2">
+		<%= form_for login_path, :html => {:class => "form-horizontal well"} do |f| %>
+			<legend class="brown">登录</legend>
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label" for="inputName">Username</label>
+					<div class="controls">
+						<%= f.text_field :name %>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPass">Password</label>
+					<div class="controls">
+						<%= f.password_field :name %>
+						&nbsp;&nbsp;<%= link_to "找回密码", "#" %>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<%= f.submit '登录', :class=>"btn btn-primary"%>
+					</div>
+				</div>
+				<hr/>
+				<div class="control-group">
+					<div class="controls">
+						还没有账户？<%= link_to "注册成为新用户", new_user_path %>
+					</div>
+				</div>
+			</fieldset>
+			
+			
+		<% end %>
+		
+		
+	</div>
+</div>

@@ -1,0 +1,164 @@
+.blank1 {margin:0 auto; width:100%; height:1px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank2 {margin:0 auto; width:100%; height:2px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank3 {margin:0 auto; width:100%; height:3px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank4 {margin:0 auto; width:100%; height:4px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank5 {margin:0 auto; width:100%; height:5px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank8 {margin:0 auto; width:100%; height:8px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank9 {margin:0 auto; width:100%; height:9px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank10 {margin:0 auto; width:100%; height:10px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank12 {margin:0 auto; width:100%; height:12px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank13 {margin:0 auto; width:100%; height:13px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank15 {margin:0 auto; width:100%; height:15px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank17 {margin:0 auto; width:100%; height:17px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank19 {margin:0 auto; width:100%; height:19px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank20 {margin:0 auto; width:100%; height:20px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank25 {margin:0 auto; width:100%; height:25px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+.blank30 {margin:0 auto; width:100%; height:30px; font-size:1px;clear:both;overflow:hidden;line-height:0px}
+
+.font-m{ font-size:14px; }
+.font-l{ font-size:16px; }
+.font-xl{ font-size:20px; }
+.font-xxl{ font-size:24px; }
+
+.white{ color: white; }
+.yellow{ color:#FDB940; }
+.orange{ color:#F68D44; }
+.red{ color:#B14439; }
+.green{ color:#AAAF3C; }
+.brown{	color: #855423;}
+.brown-darker{ color: #482e13; }
+.blue{ color: #5D8377; }
+
+
+.bg-white{ background-color:white; }
+.bg-yellow{ background-color: #FDCC3E;}
+.bg-orange{ background-color:#F68D44; }
+.bg-red{ background-color:#B14439; }
+.bg-green{ background-color:#AAAF3C; }
+.bg-brown{	background-color: #855423;}
+.bg-brown-darker{ background-color: #482e13; }
+.bg-blue{ background-color: #5D8377; }
+
+
+.divider-horizontal{ }
+.divider-vertical{ margin:auto 10px; }
+
+.field_with_errors input[type="text"],
+.field_with_errors input[type="password"],
+.field_with_errors textarea{
+	border-color:#B14439;
+}
+
+
+
+#body-content{
+	background:white;
+	min-height:600px;
+	padding-top:30px;
+}
+
+#footer{
+	height:200px;
+}
+.logo-nav-wrapper{
+	float:left;
+}
+.logo{
+	height:75px;
+	font-size:32px;
+	line-height:2;
+}
+.head{
+	background:#F4F3F2;
+	margin:0px 10px;
+	padding:0px 4px;
+}
+.head img{
+	float:left;
+	width:90px;
+	height:120px;
+	margin:0px 4px;
+}
+#nav-top{
+	height:40px;
+	line-height:40px;
+}
+#nav-bg{
+	height:160px;
+	width:100%;
+}
+#nav-bg .nav{
+	margin:0;
+}
+#nav-bg .nav > li{
+	margin-right:10px;
+}
+#nav-bg .nav > li > a{
+	color:white;
+	background-color: rgba(133, 84, 35, 0.2);
+}
+#nav-bg .nav > li > a:hover,
+#nav-bg .nav > li > a:focus{
+	color:white;
+}
+
+#nav-sub-bg{
+	height:40px;
+
+}
+#home-image{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	width:920px;
+}
+#home-image #description{
+	position:absolute;
+	width:918px;
+	height:100px;
+	background:rgba(50,50,50, 0.3);
+	z-index:1000;
+	bottom:0px;
+	left:1px;
+}
+#home-image img{
+	width:900px;
+	padding:9px;
+	border:#D8D8D8 1px solid;
+}
+#home-video-wrapper{
+	min-height:300px;
+	background:url(/assets/logo.gif) no-repeat center;
+}
+
+#application-form-birthday select{
+	width:90px;
+	margin-right:10px;
+}
+
+.article-wrapper p.paragraph{
+	text-indent: 2em;
+	line-height: 2;
+	min-height: 2em;
+	word-wrap: break-word;
+	-ms-word-wrap: break-word;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	-ms-text-justify: inter-ideograph;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+.nav-sidebar > li{
+	font-size:14px;
+	background:#F4F3F2;
+	width:80%;
+
+}
+.nav-sidebar > li > a{
+	border-left:#FDB940 4px solid;
+	padding:8px 12px;
+}
+

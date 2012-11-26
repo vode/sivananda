@@ -1,0 +1,22 @@
+<h1>Listing applications</h1>
+
+<table>
+  <tr>
+
+    <th>Name</th>
+    <th>status</th>
+    <th></th>
+  </tr>
+
+<% @applications.each do |application| %>
+  <tr>
+    <td><%= application.first_name + application.last_name%></td>
+    <td><%= application.status%></td>
+    <td><%= link_to 'Show', application %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Application', new_application_path %>
