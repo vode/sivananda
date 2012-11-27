@@ -26,16 +26,16 @@
     </div>
   </div>
   <div class="control-group">
-  	<label class="control-label" for="inputPass">Hashed Password</label>
+  	<label class="control-label" for="inputPass">Password</label>
 
     <div class="controls">
-    	<%= f.text_field :hashed_password %>
+    	<%= f.password_field :password %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputSalt">Salt</label>
+    <label class="control-label" for="inputSalt">Confirm</label>
     <div class="controls">
-    	<%= f.text_field :salt %>
+    	<%= f.password_field :password_confirmation %>
     </div>
   </div>
   <div class="control-group">
