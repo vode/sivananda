@@ -1,6 +1,7 @@
 class ApplicationsController < ApplicationController
   # GET /applications
   # GET /applications.json
+  before_filter :adminauthorize
   def index
     @applications = Application.all
 
@@ -81,6 +82,12 @@ class ApplicationsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to applications_url }
       format.json { head :no_content }
+    end
+  end
+  protected
+  def adminauthorize
+      unless User.find_by_id(session[:user_id])&(session[:role]=='admin')
+      redirect_to home_index_path
     end
   end
 end
