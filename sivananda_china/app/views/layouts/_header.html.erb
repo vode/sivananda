@@ -26,12 +26,14 @@
 					<span class="white">Sivananda Yoga (China)</span> 
 					<span class="brown">Vendata Center</span>
 				</div>
-				<ul class="nav nav-pills font-l">
-					<li><%= link_to t('.home'), root_path %></li>
-					<li><%= link_to "教师教导", "#" %></li>
-					<li><%= link_to "瑜伽课程介绍", "#" %></li>
-					<li><%= link_to "联系我们", "#" %></li>
-					<li><%= link_to "申请", "#" %></li>
+
+				<ul class="nav nav-pills font-l" id="nav-group">
+					<li><%= link_to "首页", root_path, :id=>"nav-1" %></li>
+					<li><%= link_to "教师教导", "#", :id=>"nav-2" %></li>
+					<li><%= link_to "瑜伽课程介绍", "#", :id=>"nav-3" %></li>
+					<li><%= link_to "联系我们", "#", :id=>"nav-4" %></li>
+					<li><%= link_to "关于斯文南达", sivananda_aboutus_path, :id=>"nav-5" %></li>
+					<li><%= link_to "申请", new_application_path, :id=>"nav-6" %></li>
 				</ul>
 			</div>
 			<div class="pull-right head">
@@ -42,7 +44,18 @@
 
 		<div class="clearfix"></div>
 		<div class="bg-white" id="nav-sub-bg">
-		
+			<ul class="nav nav-pills font-l sub-nav" id="sub-nav-2">
+				<li><%= link_to "教师介绍", "#" %></li>
+				<li><%= link_to "传承", about_us_master_path %></li>
+				<li><%= link_to "五个要素", about_us_keypoint_path %></li>
+				<li><%= link_to "四个途径", about_us_method_path %></li>
+			</ul>
+			<ul class="nav nav-pills font-l sub-nav" id="sub-nav-3">
+				<li><%= link_to "200小时TTC", "#" %></li>
+				<li><%= link_to "500小时TTC", "#" %></li>
+				<li><%= link_to "呼吸课程", "#" %></li>
+				<li><%= link_to "瑜伽假日课程", "#" %></li>
+			</ul>
 		</div>
 	</div>
 </div>

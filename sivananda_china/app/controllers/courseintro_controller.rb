@@ -1,8 +1,8 @@
 class CourseintroController < ApplicationController
-  def 200hour
+  def hour200
   end
 
-  def 500hour
+  def hour500
   end
 
   def breathcourse

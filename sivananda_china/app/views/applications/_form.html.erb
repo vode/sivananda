@@ -17,173 +17,183 @@
 
 	<fieldset>
   <div class="control-group">
-    <label class="control-label" for="inputUserId">User Id</label>
+    <label class="control-label" for="inputUserId"><%= t('.course')%></label>
     <div class="controls">
-    	<%= f.number_field :user_id %>
+    	<p>
+    	<%= f.label t('.ttc200hour')%>
+    	<%=f.radio_button :course,'TTC'%>
+    	<%= f.label t('.holidaycourse')%>
+    	<%=f.radio_button :course,'holidaycourse'%>
+    	</p>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputFirstName">First Name</label>
+    <label class="control-label" for="inputFirstName"><%= t('.first_name')%></label>
     <div class="controls">
     <%= f.text_field :first_name, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputLastName">Last Name</label>
+    <label class="control-label" for="inputLastName"><%= t('.last_name')%></label>
     <div class="controls">
     	<%= f.text_field :last_name, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-  	<label class="control-label" for="inputSpiritualName">Spiritual Name</label>
+  	<label class="control-label" for="inputSpiritualName"><%= t('.spiritual_name')%></label>
 		<div class="controls">
     	<%= f.text_field :spiritual_name, :class=>"input-medium" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputAge">Age</label>
+    <label class="control-label" for="inputAge"><%= t('.age')%></label>
     <div class="controls">
     	<%= f.number_field :age, :class=>"input-xsmall" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputBirthday">Birthday</label>
+    <label class="control-label" for="inputBirthday"><%= t('.birthday')%></label>
     <div class="controls" id="application-form-birthday">
-    	<%= f.date_select :date_of_birth %>
+    	<%= date_select "application", "date_of_birth", :order => [:year, :month, :day],:prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' } %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputSex">Sex</label>
+    <label class="control-label" for="inputSex"><%= t('.sex')%></label>
     <div class="controls">
     	<%= f.text_field :sex, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputMarital">Marital Status</label>
+    <label class="control-label" for="inputMarital"><%= t('.marital_status')%></label>
     <div class="controls">
     	<%= f.text_field :marital_status, :class=>"input-small" %>
     </div>
   </div>
   <hr/><div class="blank10"></div>
   <div class="control-group">
-    <label class="control-label" for="inputAddress">Address</label>
+    <label class="control-label" for="inputAddress"><%= t('.address')%></label>
     <div class="controls">
     	<%= f.text_field :address, :class=>"input-xlarge" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputCity">City</label>
+    <label class="control-label" for="inputCity"><%= t('.city')%></label>
     <div class="controls">
     	<%= f.text_field :city, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputState">State</label>
+    <label class="control-label" for="inputState"><%= t('.state')%></label>
     <div class="controls">
     	<%= f.text_field :state, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputCountry">Country</label>
+    <label class="control-label" for="inputCountry"><%= t('.country')%></label>
     <div class="controls">
     	<%= f.text_field :country, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputZip">Zip Code</label>
+    <label class="control-label" for="inputZip"><%= t('.zipcode')%></label>
     <div class="controls">
     	<%= f.text_field :zipcode, :class=>"input-small" %>
     </div>
   </div>
   <hr/><div class="blank10"></div>
   <div class="control-group">
-    <label class="control-label" for="inputEmail">Email</label>
+    <label class="control-label" for="inputEmail"><%= t('.email')%></label>
     <div class="controls">
     	<%= f.text_field :email %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputDayPhone">Day Phone</label>
+    <label class="control-label" for="inputDayPhone"><%= t('.dayphone')%></label>
     <div class="controls">
     	<%= f.text_field :dayphone, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputNightPhone">Night Phone</label>
+    <label class="control-label" for="inputNightPhone"><%= t('.nightphone')%></label>
     <div class="controls">
     	<%= f.text_field :nightphone, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputLanguage">Language</label>
+    <label class="control-label" for="inputLanguage"><%= t('.language')%></label>
     <div class="controls">
-    	<%= f.text_field :language, :class=>"input-small" %>
+    	<p>
+    	<%= f.label t('.english')%>
+    	<%=f.radio_button :language,'english'%>
+    	<%= f.label t('.chinese')%>
+    	<%=f.radio_button :language,'chinese'%>
+    	</p>
     </div>
   </div>
   <hr/><div class="blank10"></div>
   <div class="control-group">
-    <label class="control-label" for="inputIllness">Illness</label>
+    <label class="control-label" for="inputIllness"><%= t('.illness')%></label>
     <div class="controls">
     	<%= f.text_field :illness, :class=>"input-xlarge" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputMedication">Prescribed Medications</label>
+    <label class="control-label" for="inputMedication"><%= t('.prescribed_medication')%></label>
     <div class="controls">
     	<%= f.text_field :prescribed_medications, :class=>"input-xlarge" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputEmgContact">Emergency Contact</label>
+    <label class="control-label" for="inputEmgContact"><%= t('.emergency_contact')%></label>
     <div class="controls">
     	<%= f.text_field :emergency_contact, :class=>"input-xlarge" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputEmgRelationship">Emergency Relationship</label>
+    <label class="control-label" for="inputEmgRelationship"><%= t('.emergency_relationship')%></label>
     <div class="controls">
     	<%= f.text_field :emergency_relationship, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputEmgEmail">Emergency Email</label>
+    <label class="control-label" for="inputEmgEmail"><%= t('.emergency_email')%></label>
     <div class="controls">
     	<%= f.text_field :emergency_email %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputEmgPhone">Emergency Phone</label>
+    <label class="control-label" for="inputEmgPhone"><%= t('.emergency_phone')%></label>
     <div class="controls">
     	<%= f.text_field :emergency_phone, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputEmgAddress">Emergency Address</label>
+    <label class="control-label" for="inputEmgAddress"><%= t('.emergency_address')%></label>
     <div class="controls">
     	<%= f.text_field :emergency_address, :class=>"input-xlarge" %>
     </div>
   </div>
   <hr/><div class="blank10"></div>
   <div class="control-group">
-    <label class="control-label" for="inputPracticePeriod">How Long Practice</label>
+    <label class="control-label" for="inputPracticePeriod"><%= t('.how_long_practice')%></label>
     <div class="controls">
     	<%= f.text_field :how_long_practice, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputPracticeSource">How Know</label>
+    <label class="control-label" for="inputPracticeSource"><%= t('.how_do_you_know')%></label>
     <div class="controls">
     	<%= f.text_field :how_know, :class=>"input-xlarge" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputEverBeen">Ever Been</label>
+    <label class="control-label" for="inputEverBeen"><%= t('.ever_been')%></label>
     <div class="controls">
     	<%= f.check_box :ever_been, :class=>"input-small" %>
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="inputPractice">Experience</label>
+    <label class="control-label" for="inputPractice"><%= t('.experience')%></label>
     <div class="controls">
     	<%= f.text_area :experience, :rows=>"5",:class=>"input-xlarge" %>
     </div>
@@ -191,7 +201,7 @@
   <hr/>
   <div class="control-group">
   	<div class="controls">
-    	<%= f.submit '提交', :class=>"btn btn-primary" %>
+    	<%= f.submit t('.submit'), :class=>"btn btn-primary" %>
     </div>
   </div>
   

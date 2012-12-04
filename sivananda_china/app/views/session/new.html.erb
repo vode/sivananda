@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="span8 offset2">
-		<%= form_for login_path, :html => {:class => "form-horizontal well"} do |f| %>
+		<%= form_for new_path, :html => {:class => "form-horizontal well"} do |f| %>
 			<legend class="brown">登录</legend>
 			<fieldset>
 				<div class="control-group">
@@ -12,7 +12,7 @@
 				<div class="control-group">
 					<label class="control-label" for="inputPass">Password</label>
 					<div class="controls">
-						<%= f.password_field :name %>
+						<%= f.password_field :password %>
 						&nbsp;&nbsp;<%= link_to "找回密码", "#" %>
 					</div>
 				</div>

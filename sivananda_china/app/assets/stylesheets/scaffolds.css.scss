@@ -79,6 +79,8 @@
 	height:120px;
 	margin:0px 4px;
 }
+
+
 #nav-top{
 	height:40px;
 	line-height:40px;
@@ -102,9 +104,25 @@
 	color:white;
 }
 
-#nav-sub-bg{
-	height:40px;
+#nav-group li {
+	position:relative;
+}
 
+#nav-sub-bg{
+	height:35px;
+	padding-top:5px;
+}
+#nav-sub-bg .nav > li > a{
+	background:none;
+	color: #855423;
+}
+#nav-sub-bg .nav > li > a:hover,
+#nav-sub-bg .nav > li > a:focus{
+	color: #482e13;
+}
+#nav-sub-bg .sub-nav{
+	display:none;
+	margin-left:10px;
 }
 #home-image{
 	position:relative;

@@ -9,7 +9,7 @@ class SessionController < ApplicationController
       session[:role]=user.role
       redirect_to home_index_path
     else
-      redirect_to login_rul,:alert=>"Invalid user/password combination"
+      redirect_to tips_tips_path(:tips=>'用户名或密码错误')
     end
   end
   

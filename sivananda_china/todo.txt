@@ -1,0 +1,11 @@
+我把下面的页面的内容给填上了
+home#index
+sivananda#aboutus
+aboutus#keypoint
+aboutus#master
+aboutus#method
+tips#tips
+您调下吧
+还有就是我把applications#form里的表格给改了下，加了几个radio_button,但不能搞成一行，您帮着改成一行吧
+剩下还有几个页面，等我这两天git上去
+ps:还有好多t('.xxx')这样的表达式，这是多语言环境用的，您就当字符串处理即可

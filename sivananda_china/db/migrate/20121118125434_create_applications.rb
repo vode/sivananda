@@ -1,6 +1,6 @@
 class CreateApplications < ActiveRecord::Migration
   def change
-    create_table :applications do |t|
+    create_table( :applications ,:options=>("identity(10000,1)")) do |t|
       t.integer :user_id
       t.string :first_name
       t.string :last_name

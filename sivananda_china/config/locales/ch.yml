@@ -4,3 +4,45 @@ ch:
   layouts:
     header:
       home:    "首页"
+  applications:
+    index:
+      application_number: "申请编号"
+      name: "姓名"
+      status: "状态"
+      course: "课程"
+    form:
+      course:  "课程"
+      first_name: "姓"
+      last_name: '名'
+      spiritual_name: '圣名'
+      age: '年龄'
+      birthday: '生日'
+      sex: '性别'
+      marital_status: '婚姻状况'
+      address: '地址'
+      city: '城市'
+      state: '省'
+      country: '国家'
+      zipcode: '邮政编码'
+      email: '电子邮件'
+      dayphone: '白天电话'
+      nightphone: '晚上电话'
+      language: '语言'
+      prescribed_medication: '处方药品'
+      illness: '病历'
+      emergency_contact: '紧急联系人'
+      emergency_relationship: '关系'
+      emergency_phone: "紧急通知电话"
+      emergency_email: "紧急通知电子邮件"
+      emergency_address: "紧急通知地址"
+      how_long_practice: "学习瑜伽多久了"
+      how_do_you_know: "你如何知道这次活动"
+      ever_been: "你以前来过斯文南达瑜伽学院么"
+      experience: "请简述你的瑜伽和冥想经历"
+      english: '英语'
+      chinese: '汉语'
+      ttc200hour: '200小时ttc'
+      holidaycourse: '假日课程'
+      submit: "提交"
+      
+      

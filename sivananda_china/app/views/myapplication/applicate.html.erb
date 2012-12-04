@@ -1,0 +1,205 @@
+<%= form_for @application, :html => {:class => "form-horizontal well"} do |f| %>
+	<legend class="brown">报名表</legend>
+  <% if @application.errors.any? %>
+    <div id="error_explanation" class="alert alert-error">
+    	<div class="row-fluid">
+      	<h4><%= pluralize(@application.errors.count, "error") %> prohibited this application from being saved:</h4>
+
+		    <ul class="offset1">
+		    <% @application.errors.full_messages.each do |msg| %>
+		      <li><%= msg %></li>
+		    <% end %>
+		    </ul>
+    	</div>
+    </div>
+    <div class="blank20"></div>
+  <% end %>
+
+	<fieldset>
+  <div class="control-group">
+    <label class="control-label" for="inputUserId">Course Name</label>
+    <div class="controls">
+    	<%= f.label "200小时瑜伽训练班"%>
+    	<%=f.radio_button :course,'TTC'%>
+    	<%= f.label "假日课程"%>
+    	<%=f.radio_button :course,'holidaycourse'%>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputFirstName">First Name</label>
+    <div class="controls">
+    <%= f.text_field :first_name, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputLastName">Last Name</label>
+    <div class="controls">
+    	<%= f.text_field :last_name, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+  	<label class="control-label" for="inputSpiritualName">Spiritual Name</label>
+		<div class="controls">
+    	<%= f.text_field :spiritual_name, :class=>"input-medium" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputAge">Age</label>
+    <div class="controls">
+    	<%= f.number_field :age, :class=>"input-xsmall" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputBirthday">Birthday</label>
+    <div class="controls" id="application-form-birthday">
+    	<%= date_select "application", "date_of_birth", :order => [:year, :month, :day],:prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' } %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputSex">Sex</label>
+    <div class="controls">
+    	<%= f.text_field :sex, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputMarital">Marital Status</label>
+    <div class="controls">
+    	<%= f.text_field :marital_status, :class=>"input-small" %>
+    </div>
+  </div>
+  <hr/><div class="blank10"></div>
+  <div class="control-group">
+    <label class="control-label" for="inputAddress">Address</label>
+    <div class="controls">
+    	<%= f.text_field :address, :class=>"input-xlarge" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputCity">City</label>
+    <div class="controls">
+    	<%= f.text_field :city, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputState">State</label>
+    <div class="controls">
+    	<%= f.text_field :state, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputCountry">Country</label>
+    <div class="controls">
+    	<%= f.text_field :country, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputZip">Zip Code</label>
+    <div class="controls">
+    	<%= f.text_field :zipcode, :class=>"input-small" %>
+    </div>
+  </div>
+  <hr/><div class="blank10"></div>
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Email</label>
+    <div class="controls">
+    	<%= f.text_field :email %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputDayPhone">Day Phone</label>
+    <div class="controls">
+    	<%= f.text_field :dayphone, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputNightPhone">Night Phone</label>
+    <div class="controls">
+    	<%= f.text_field :nightphone, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputLanguage">Language</label>
+    <div class="controls">
+    	<%= f.text_field :language, :class=>"input-small" %>
+    	
+    	
+    	
+    </div>
+  </div>
+  <hr/><div class="blank10"></div>
+  <div class="control-group">
+    <label class="control-label" for="inputIllness">Illness</label>
+    <div class="controls">
+    	<%= f.text_field :illness, :class=>"input-xlarge" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputMedication">Prescribed Medications</label>
+    <div class="controls">
+    	<%= f.text_field :prescribed_medications, :class=>"input-xlarge" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputEmgContact">Emergency Contact</label>
+    <div class="controls">
+    	<%= f.text_field :emergency_contact, :class=>"input-xlarge" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputEmgRelationship">Emergency Relationship</label>
+    <div class="controls">
+    	<%= f.text_field :emergency_relationship, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputEmgEmail">Emergency Email</label>
+    <div class="controls">
+    	<%= f.text_field :emergency_email %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputEmgPhone">Emergency Phone</label>
+    <div class="controls">
+    	<%= f.text_field :emergency_phone, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputEmgAddress">Emergency Address</label>
+    <div class="controls">
+    	<%= f.text_field :emergency_address, :class=>"input-xlarge" %>
+    </div>
+  </div>
+  <hr/><div class="blank10"></div>
+  <div class="control-group">
+    <label class="control-label" for="inputPracticePeriod">How Long Practice</label>
+    <div class="controls">
+    	<%= f.text_field :how_long_practice, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPracticeSource">How Know</label>
+    <div class="controls">
+    	<%= f.text_field :how_know, :class=>"input-xlarge" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputEverBeen">Ever Been</label>
+    <div class="controls">
+    	<%= f.check_box :ever_been, :class=>"input-small" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPractice">Experience</label>
+    <div class="controls">
+    	<%= f.text_area :experience, :rows=>"5",:class=>"input-xlarge" %>
+    </div>
+  </div>
+  <hr/>
+  <div class="control-group">
+  	<div class="controls">
+    	<%= f.submit '提交', :class=>"btn btn-primary" %>
+    </div>
+  </div>
+  
+  </fieldset>
+<% end %>

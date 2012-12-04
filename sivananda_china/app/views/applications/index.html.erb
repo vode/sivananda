@@ -1,15 +1,16 @@
-<h1>Listing applications</h1>
-
 <table>
   <tr>
-
-    <th>Name</th>
-    <th>status</th>
+	<th><%t('.application_number')%></th>
+    <th><%t('.course')%></th>
+    <th><%t('.name')'%></th>
+    <th><%t('.status')%></th>
     <th></th>
   </tr>
 
 <% @applications.each do |application| %>
   <tr>
+    <td><%= application.id</td>
+    <td><%= application.course></td>
     <td><%= application.first_name + application.last_name%></td>
     <td><%= application.status%></td>
     <td><%= link_to 'Show', application %></td>

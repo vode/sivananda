@@ -1,10 +1,8 @@
 <p id="notice"><%= notice %></p>
-
 <p>
-  <b>User:</b>
-  <%= @application.user_id %>
+	<b>Course:</b>
+	<%= @application.course%>
 </p>
-
 <p>
   <b>First name:</b>
   <%= @application.first_name %>
@@ -14,7 +12,6 @@
   <b>Last name:</b>
   <%= @application.last_name %>
 </p>
-
 <p>
   <b>Spiritual name:</b>
   <%= @application.spiritual_name %>
@@ -140,6 +137,3 @@
   <%= @application.experience %>
 </p>
 
-
-<%= link_to 'Edit', edit_application_path(@application) %> |
-<%= link_to 'Back', applications_path %>

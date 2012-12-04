@@ -1,36 +1,42 @@
 SivanandaChina::Application.routes.draw do
-  get "courseintro/200hour"
+  get "tips/tips"
 
-  get "courseintro/500hour"
+  get "sivananda/aboutus"
+
+  resources :courses
+
+  get "courseintro/hour200"
+
+  get "courseintro/hour500"
 
   get "courseintro/breathcourse"
 
   get "courseintro/holidaycourse"
-
+  get "about_us/master"
+  get "about_us/method"
+  get "about_us/keypoint"
 scope '(:locale)' do
-  
+  resources :applications
   get "myapplication/myapplication"
-
+	controller :myapplication do
+	  get 'applicate'=> :applicate
+	  post 'applicate'=> :new
+	end
 	root to:'home#index'
 	
   get "about_us/teacher"
 
-  get "session/new"
-
-  get "session/create"
-
-  get "session/destroy"
   controller :session do
-    get 'login' => :new
-    post 'login' => :create
-    delete 'logout'=>:destroy
+    get 'new' => :new
+    post 'new' => :create
+    delete 'new'=>:destroy
   end
 
   get "home/index"
 
   get "language/navi"
   
-  resources :applications
+  
 
   resources :users
 end

@@ -1,2 +1,31 @@
 class Application < ActiveRecord::Base
+  validates :first_name,:presence=>true
+  validates :course,:presence=>true
+  validates :last_name,:presence=>true
+  validates :spiritual_name,:presence=>true
+  validates :age,:presence=>true
+  validates :date_of_birth,:presence=>true
+  validates :sex,:presence=>true
+  validates :marital_status,:presence=>true
+  validates :address,:presence=>true
+  validates :city,:presence=>true
+  validates :state,:presence=>true
+  validates :country,:presence=>true
+  validates :zipcode,:presence=>true
+  validates :email,:presence=>true
+  validates :dayphone,:presence=>true
+  validates :language,:presence=>true
+  validates :illness,:presence=>true
+  validates :prescribed_medications,:presence=>true
+  validates :emergency_contact,:presence=>true
+  validates :emergency_relationship,:presence=>true
+  validates :emergency_email,:presence=>true
+  validates :emergency_phone,:presence=>true
+  validates :emergency_address,:presence=>true
+  validates :how_long_practice,:presence=>true
+  validates :how_know,:presence=>true 
+  validates :ever_been,:presence=>true
+  validates :experience,:presence=>true
+  validates :status,:presence=>true
+  validates :tuition,:presence=>true
 end
