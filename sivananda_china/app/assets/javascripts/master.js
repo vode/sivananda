@@ -1,17 +1,21 @@
 $(function(){
 	//navigation
+	$('#nav-sub-bg ul.active').show();
 	
 	$('#nav-group li').each(function(){
-		var _nav = $(this).children('a:first');
-		var _subnav_id = _nav.attr('id').replace('nav','sub-nav');
-		var _subnav = $('#'+_subnav_id);
+		var nav = $(this).children('a:first');
+		var subnav_id = nav.attr('id').replace('nav','sub-nav');
+		var subnav = $('#'+subnav_id);
+	
 		
-		_nav.hover(function(){
+		nav.hover(function(){
 			$('.sub-nav').hide();
-			if(_subnav.length){
-				_subnav.show();	
+			if(subnav.length){
+				subnav.show();	
 			}
-
+			else{
+				$('#nav-sub-bg ul.active').show();
+			}
 		});
 		
 	

@@ -44,8 +44,8 @@
 
 		<div class="clearfix"></div>
 		<div class="bg-white" id="nav-sub-bg">
-			<ul class="nav nav-pills font-l sub-nav" id="sub-nav-2">
-				<li><%= link_to "教师介绍", "#" %></li>
+			<ul class="nav nav-pills font-l sub-nav <% if content_for?(:active_sub_nav) %><%= yield(:active_sub_nav) %><% end %>" id="sub-nav-2">
+				<li><%= link_to "教师介绍", about_us_teacher_path %></li>
 				<li><%= link_to "传承", about_us_master_path %></li>
 				<li><%= link_to "五个要素", about_us_keypoint_path %></li>
 				<li><%= link_to "四个途径", about_us_method_path %></li>
