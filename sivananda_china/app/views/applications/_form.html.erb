@@ -19,12 +19,15 @@
   <div class="control-group">
     <label class="control-label" for="inputUserId"><%= t('.course')%></label>
     <div class="controls">
-    	<p>
-    	<%= f.label t('.ttc200hour')%>
-    	<%=f.radio_button :course,'TTC'%>
-    	<%= f.label t('.holidaycourse')%>
-    	<%=f.radio_button :course,'holidaycourse'%>
-    	</p>
+    	<label class="radio inline">
+    		<%=f.radio_button :course,'TTC'%><%= f.label t('.ttc200hour')%>
+    	</label>
+    	
+    	<label class="radio inline">
+    		<%=f.radio_button :course,'holidaycourse'%><%= f.label t('.holidaycourse')%>
+    	</label>
+    	
+    	
     </div>
   </div>
   <div class="control-group">
@@ -122,12 +125,14 @@
   <div class="control-group">
     <label class="control-label" for="inputLanguage"><%= t('.language')%></label>
     <div class="controls">
-    	<p>
-    	<%= f.label t('.english')%>
-    	<%=f.radio_button :language,'english'%>
-    	<%= f.label t('.chinese')%>
-    	<%=f.radio_button :language,'chinese'%>
-    	</p>
+    	
+			<label class="radio inline">
+    		<%=f.radio_button :language,'english'%><%= f.label t('.english')%>
+    	</label>
+    	<label class="radio inline">
+    		<%=f.radio_button :language,'chinese'%><%= f.label t('.chinese')%>
+    	</label>
+
     </div>
   </div>
   <hr/><div class="blank10"></div>
