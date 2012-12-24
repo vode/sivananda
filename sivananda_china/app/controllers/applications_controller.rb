@@ -63,7 +63,7 @@ class ApplicationsController < ApplicationController
 
     respond_to do |format|
       if @application.save
-        format.html {redirect_to tips_tips_path(:tips=>('申请成功，您的订单编号是'+@application.id.to_s+'请付款至xxxxxx'))}
+        format.html {redirect_to tips_tips_path :tips=>("fuck")}
         format.json { render json: @application, status: :created, location: @application }
       else
         format.html { render action: "new" }
