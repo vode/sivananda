@@ -9,3 +9,29 @@ tips#tips
 还有就是我把applications#form里的表格给改了下，加了几个radio_button,但不能搞成一行，您帮着改成一行吧
 剩下还有几个页面，等我这两天git上去
 ps:还有好多t('.xxx')这样的表达式，这是多语言环境用的，您就当字符串处理即可
+
+Run: bundle install
+ 
+Here is the JW Player 5 wrapper for Ruby on Rails 3
+
+To install:
+
+  rails plugin install git://github.com/sekrett/jw_player_on_rails.git
+
+To setup:
+
+  rails generate jw_player
+
+This adds <i>player.swf</i> and <i>yt.swf</i> to <i>public/jwplayer/</i> and
+<i>jwplayer.js</i> to <i>public/javascripts/</i>.
+
+In your layout add:
+
+  <%= jw_player_headers %>
+
+==Example Usage
+To check player is working simply add:
+
+  <%= jw_player("http://github.com/sekrett/jw_player_on_rails/raw/master/video.mp4",
+    :width => 200, :height => 110) %>
+
