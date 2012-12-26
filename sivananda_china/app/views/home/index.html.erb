@@ -1,10 +1,21 @@
-<div id="home-image">
-	<%= image_tag "home.jpg" %>
+<% content_for :active_arrow do %>
+	1
+<% end %>
+
+<div id="home-media" class="carousel slide">
+	<div class="carousel-inner">
+		<div class="active item"><%= image_tag "home.jpg" %></div>
+	  <div class="item"><%= jw_player("/videos/video1.flv", :width => 920, :height => 450) %></div>
+	  <div class="item"><%= jw_player("/videos/video2.flv", :width => 920, :height => 450) %></div>
+	</div>
+	
+	<a class="carousel-control left" href="#home-media" data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#home-media" data-slide="next">&rsaquo;</a>
 </div>
 
 <div class="blank10"></div>
 <div class="row-fluid">
-	<div class="article-wrapper span10 offset1">
+	<div class="article-wrapper span10 offset1" id="home-intro">
 		<h2 class="word-centered word-shadow blue">TTC 瑜伽导师培训班</h2>
 		<p class="paragraph font-m">
 		TTC的课程开始于40年前，已经培养了超过26, 000名世界公认的毕业生。  Swami Vishnudevananda是第一个在西方发展这种瑜伽教师培训体系的创始人，他不仅成功的传扬了经典瑜伽，更在传教瑜伽的同时在世界上传播和平。 TTC承袭了传统的Gurukura 独特的教授学习方式， 这种方式是根据现代人的生活节奏为基础， 让学生在日常生活中通过系统的学习（包括瑜伽哲学，唱颂，体位法，呼吸法以及奉爱瑜伽等） 来深刻体会瑜伽的真正人生意义及目的。
@@ -21,16 +32,3 @@
 
 <hr class="soften" />
 
-<div class="blank10"></div>
-<div id="home-video-wrapper">
-	<div class="row">
-		<div class="span5 offset1">
-			video 1
-			todo 
-		</div>
-		<div class="span5 offset1">
-			video 2
-			todo
-		</div>
-	</div>
-</div>

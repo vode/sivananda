@@ -23,14 +23,13 @@
 		<div class="logo-wrapper">
 			<div class="logo-nav-wrapper">
 				<div class="logo">
-					<span class="white">Sivananda Yoga (China)</span> 
-					<span class="brown">Vendata Center</span>
+					<%= link_to image_tag('logo.png'), root_path %>
 				</div>
 
 				<ul class="nav nav-pills font-l" id="nav-group">
 					<li><%= link_to "首页", root_path, :id=>"nav-1" %></li>
-					<li><%= link_to "教师教导", "#", :id=>"nav-2" %></li>
-					<li><%= link_to "瑜伽课程介绍", "#", :id=>"nav-3" %></li>
+					<li><%= link_to "教师教导", about_us_teacher_path, :id=>"nav-2" %></li>
+					<li><%= link_to "瑜伽课程介绍", courseintro_hour200_path, :id=>"nav-3" %></li>
 					<li><%= link_to "联系我们", "#", :id=>"nav-4" %></li>
 					<li><%= link_to "关于斯文南达", sivananda_aboutus_path, :id=>"nav-5" %></li>
 					<li><%= link_to "申请", new_application_path, :id=>"nav-6" %></li>
@@ -43,16 +42,16 @@
 		</div>
 
 		<div class="clearfix"></div>
-		<div class="bg-white" id="nav-sub-bg">
-			<ul class="nav nav-pills font-l sub-nav <% if content_for?(:active_sub_nav) %><%= yield(:active_sub_nav) %><% end %>" id="sub-nav-2">
+		<div class="bg-white" id="nav-sub-bg" data-nav="<% if content_for?(:active_arrow) %><%= yield(:active_arrow) %><% end %>">
+			<ul class="nav nav-pills font-l sub-nav <% if content_for?(:active_sub_nav2) %><%= yield(:active_sub_nav2) %><% end %>" id="sub-nav-2">
 				<li><%= link_to "教师介绍", about_us_teacher_path %></li>
 				<li><%= link_to "传承", about_us_master_path %></li>
 				<li><%= link_to "五个要素", about_us_keypoint_path %></li>
 				<li><%= link_to "四个途径", about_us_method_path %></li>
 			</ul>
-			<ul class="nav nav-pills font-l sub-nav" id="sub-nav-3">
+			<ul class="nav nav-pills font-l sub-nav <% if content_for?(:active_sub_nav3) %><%= yield(:active_sub_nav3) %><% end %>" id="sub-nav-3">
 				<li><%= link_to "初级瑜伽老师培训TTC（RYS200小时）", courseintro_hour200_path %></li>
-				<li><%= link_to "高级瑜伽老师培训（RYS500小时", courseintro_hour500_path %></li>
+				<li><%= link_to "高级瑜伽老师培训（RYS500小时)", courseintro_hour500_path %></li>
 				<li><%= link_to "呼吸课程", courseintro_breathcourse_path %></li>
 				<li><%= link_to "瑜伽假日课程", courseintro_holidaycourse_path %></li>
 			</ul>
